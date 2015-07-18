@@ -1,0 +1,33 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="WACC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" Background="Black">
+    <Canvas HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="480" Background="#FF003AFF">
+        <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Regen" Canvas.Top="10" Height="94" Width="460" FontSize="48" FontWeight="Bold" FontStyle="Italic" TextDecorations="Underline" TextAlignment="Center" FontFamily="Times New Roman" Tap="TextBlock_Tap"/>
+        <TextBox x:Name="tb1" Height="72" TextWrapping="Wrap" Width="460" Canvas.Top="145" Canvas.Left="10" IsReadOnly="True"/>
+        <Button Content="Word" Canvas.Left="239" Canvas.Top="222" Click="Button_Click" Width="229"/>
+        <Button Content="Number" Canvas.Left="239" Canvas.Top="294" Width="229" Click="Button_Click_3"/>
+        <Button Content="Special" Canvas.Left="10" Canvas.Top="294" Width="229" Click="Button_Click_2"/>
+        <Button Content="Word [Capital]" Canvas.Left="10" Canvas.Top="222" Width="229" Click="Button_Click_1"/>
+        <Button Content="Any" Canvas.Left="10" Canvas.Top="366" Width="229" Click="Button_Click_4"/>
+        <Button Content="Remove" Canvas.Left="239" Canvas.Top="366" Width="229" Click="Button_Click_5"/>
+        <TextBlock TextWrapping="Wrap" Text="Output :" Canvas.Left="12" Canvas.Top="505" Width="88"/>
+        <TextBlock x:Name="op" TextWrapping="Wrap" Canvas.Left="12" Canvas.Top="537" Width="458" Height="221"/>
+        <Button Content="Generate" Canvas.Left="126" Canvas.Top="438" Width="229" Click="Button_Click_6"/>
+        <Button x:Name="About" Content="About" Canvas.Left="12" Canvas.Top="438" Width="124" Height="72" Click="About_Click"/>
+        <Button x:Name="cpy" Content="Copy" Canvas.Left="344" Canvas.Top="438" Width="124" Height="72" Click="cpy_Click"/>
+    </Canvas>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+
+</phone:PhoneApplicationPage>
